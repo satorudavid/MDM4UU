@@ -1,1 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Numérique - Module 2.4 : La Distribution Normale</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-radius: 8px;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #1a252f;
+            padding: 0.8rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .img-container {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            border: 1px solid #ddd;
+        }
+
+        .source-link {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+            display: block;
+        }
+
+        .source-link a {
+            color: var(--secondary-color);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .gallery-item {
+            border: 1px solid #e0e0e0;
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            background-color: #fafafa;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 0.8rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 0.5rem;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio Numérique</h1>
+        <p>Module 2.4 : La Distribution Normale</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="module2-3.html">&laquo; Module 2.3</a>
+        <a href="module2-4.html" style="color: var(--secondary-color);">Module 2.4</a>
+        <a href="module2-5.html">Module 2.5 &raquo;</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- SECTION 1 : Illustration et Explications -->
+        <section class="section-card">
+            <h2>1. Représentation de la Distribution Normale</h2>
+            <p>
+                La distribution normale (ou courbe en cloche / courbe de Gauss) est un concept clé en statistique. 
+                Elle se caractérise par sa symétrie par rapport à la moyenne ($\mu$) et est régie par la règle empirique 68-95-99.7.
+            </p>
+            
+            <div class="img-container">
+                <!-- Image de la distribution normale -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/1200px-Standard_deviation_diagram.svg.png" 
+                     alt="Graphique de la distribution normale (règle empirique)">
+                
+                <span class="source-link">
+                    <strong>Source de l'image :</strong> 
+                    <a href="https://commons.wikimedia.org/wiki/File:Standard_deviation_diagram.svg" target="_blank" rel="noopener noreferrer">
+                        Wikimedia Commons - Standard deviation diagram par dBurns (CC BY-SA 3.0)
+                    </a>
+                </span>
+            </div>
+        </section>
+
+        <!-- SECTION 2 : Exercices 2.4 - Partie 1 (Desmos / Sheets) -->
+        <section class="section-card">
+            <h2>2. Exercices 2.4 - Partie 1 (Outils Numériques)</h2>
+            <p>Voici la résolution des exercices de la première partie réalisée à l'aide des outils interactifs DESMOS et Google Sheets.</p>
+
+            <div class="gallery">
+                <!-- Élément 1 : Desmos -->
+                <div class="gallery-item">
+                    <h3>Graphique sur Desmos</h3>
+                    <!-- Remplace par ton image : images/desmos-capture.png -->
+                    <img src="https://via.placeholder.com/400x250?text=Capture+d%27écran+Desmos" alt="Capture d'écran de l'exercice sur Desmos">
+                    <p>Visualisation de la courbe de Gauss et calcul d'aires sous la courbe.</p>
+                    <a href="https://www.desmos.com/calculator?lang=fr" target="_blank" class="btn">Lien vers mon Desmos</a>
+                </div>
+
+                <!-- Élément 2 : Google Sheets / Excel -->
+                <div class="gallery-item">
+                    <h3>Tableur Google Sheets</h3>
+                    <!-- Remplace par ton image : images/sheets-capture.png -->
+                    <img src="https://via.placeholder.com/400x250?text=Capture+d%27écran+Google+Sheets" alt="Capture d'écran du travail sur Google Sheets">
+                    <p>Calcul des cotes Z et fonctions <code>LOI.NORMALE</code>.</p>
+                    <a href="https://docs.google.com/spreadsheets/" target="_blank" class="btn">Consulter la feuille Sheets</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3 : Travail manuscrit (Papier / Crayon numérisé) -->
+        <section class="section-card">
+            <h2>3. Demarche et Calculs Manuscrits</h2>
+            <p>Vous trouverez ci-dessous les détails de mes démarches mathématiques numérisées réalisées papier-crayon pour valider mes réponses.</p>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <h3>Page 1 - Démarches et Calculs</h3>
+                    <!-- Remplace par la capture ou la photo de ton papier -->
+                    <img src="https://via.placeholder.com/400x500?text=Scan+Travail+Manuscrit+Page+1" alt="Scan de mon travail manuscrit">
+                    <p>Calculs détaillés de la cote Z et de la règle 68-95-99.7.</p>
+                    <a href="fichiers/travail-manuscrit.pdf" target="_blank" class="btn">📄 Télécharger / Voir le document PDF</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Portfolio de Mathématiques | Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
