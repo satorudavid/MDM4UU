@@ -13,6 +13,50 @@ body {font-family: "Roboto", sans-serif}
   padding: 16px;
   font-weight: bold;
 }
+        header {
+            background-color: #234e70;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+        section {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        }
+        h2 {
+            color: #234e70;
+            border-bottom: 2px solid #d5e5f2;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #3478a8;
+            margin-top: 20px;
+        }
+        .explication {
+            min-height: 50px;
+            border-left: 4px solid #d5e5f2;
+            padding: 10px 15px;
+            margin-top: 10px;
+            color: #555;
+            white-space: pre-line;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #234e70;
+            color: white;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #a9cce3;
+            text-decoration: underline;
+        }
+        footer a:hover {
+            color: white;
+        }
 </style>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
@@ -44,89 +88,11 @@ $(function(){
 
 <div class="w3-container" style="padding:32px">
 
-
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les mesures de dispersion</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #234e70;
-            color: white;
-            text-align: center;
-            padding: 30px 15px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-        }
-
-        section {
-            background-color: white;
-            margin-bottom: 25px;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
-        }
-
-        h2 {
-            color: #234e70;
-            border-bottom: 2px solid #d5e5f2;
-            padding-bottom: 8px;
-        }
-
-        h3 {
-            color: #3478a8;
-            margin-top: 20px;
-        }
-
-        .explication {
-            min-height: 50px;
-            border-left: 4px solid #d5e5f2;
-            padding: 10px 15px;
-            margin-top: 10px;
-            color: #777;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #234e70;
-            color: white;
-        }
-    </style>
-</head>
-
-<body>
-
-   
     <main>
 
         <section>
             <h2>1. Les mesures de dispersion</h2>
-
             <h3>À quoi servent les mesures de dispersion ?</h3>
-
             <div class="explication">
               Les mesures de dispersion (telles que l'étendue, la variance, l'écart-type et l'écart interquartile) servent à quantifier à quel point les données d'une série statistique sont étalées ou regroupées autour d'une valeur centrale (comme la moyenne ou la médiane).
             </div>
@@ -136,33 +102,25 @@ $(function(){
             <h2>2. Les méthodes de mesure de dispersion</h2>
 
             <h3>2.1 L'étendue</h3>
-
             <p><strong>Qu'est-ce que l'étendue ?</strong></p>
-
             <div class="explication">
                L'étendue est la mesure de dispersion la plus simple en statistique. Elle correspond à la différence (l'écart) entre la plus grande valeur et la plus petite valeur d'une série de données.
             </div>
 
             <h3>2.2 Les quartiles</h3>
-
             <p><strong>Définir et expliquer les quartiles</strong></p>
-
             <div class="explication">
                 Les quartiles sont des valeurs qui divisent une série de données statistiques ordonnées (du plus petit au plus grand) en quatre parties égales, chacune représentant 25 % de l'ensemble des données.
             </div>
 
             <h3>2.3 L'écart interquartile</h3>
-
             <p><strong>Définir et expliquer l'écart interquartile</strong></p>
-
             <div class="explication">
                L'écart interquartile (souvent abrégé ÉI ou IQR) est une mesure de dispersion statistique qui correspond à l'étalement de la moitié centrale d'une série de données.
             </div>
 
             <h3>2.4 L'écart type</h3>
-
             <p><strong>Définir et expliquer l'écart type</strong></p>
-
             <div class="explication">
                L'écart-type est la mesure de dispersion la plus importante et la plus utilisée en statistique. Il représente l'écart moyen entre les données d'une série et leur moyenne arithmétique.
             </div>
@@ -170,25 +128,26 @@ $(function(){
 
         <section>
             <h2>3. Comment calculer l'écart type ?</h2>
-
             <h3>Les étapes du calcul de l'écart type</h3>
-
             <div class="explication">
-               Trouve la moyenne
-Soustrait la moyenne de chaque valeur dans l’ensemble
-Fait le carré de chacune de ces différences
-Trouve la moyenne de ces différences (c’est la variance)
-Trouve la racine carrée de cette moyenne (c’est l’écart-type)
-
+1. Trouve la moyenne
+2. Soustrait la moyenne de chaque valeur dans l’ensemble
+3. Fait le carré de chacune de ces différences
+4. Trouve la moyenne de ces différences (c’est la variance)
+5. Trouve la racine carrée de cette moyenne (c’est l’écart-type)
             </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>Les mesures de dispersion — Présentation de statistiques</p>
-      https://docs.google.com/presentation/d/1tXPZIZGQORBiqncTZE7DXeNAXTLYVB5rUZZRTPkWiaU/edit?slide=id.gc4e4700f0f_2_96#slide=id.gc4e4700f0f_2_96
-    </footer>
+</div>
+
+<footer>
+    <p>Les mesures de dispersion — Présentation de statistiques</p>
+    <p><a href="https://docs.google.com/presentation/d/1tXPZIZGQORBiqncTZE7DXeNAXTLYVB5rUZZRTPkWiaU/edit?slide=id.gc4e4700f0f_2_96#slide=id.gc4e4700f0f_2_96" target="_blank">🔗 Ouvrir la présentation Google Slides de la leçon</a></p>
+</footer>
+
+</div>
 
 </body>
 </html>
