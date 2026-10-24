@@ -1,1 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Numérique - Module 2.5 : La Corrélation Bivariée</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-radius: 8px;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #1a252f;
+            padding: 0.8rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section-card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 1.5rem;
+        }
+        .graph-card {
+            background-color: #f1f8ff;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+        .img-container, .video-container {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            border: 1px solid #ddd;
+        }
+        .graph-embed {
+            width: 100%;
+            height: 450px;
+            border: 1px solid #ccc;
+            border-radius: var(--border-radius);
+            margin: 1rem 0;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: 0;
+            border-radius: var(--border-radius);
+        }
+        .correlation-info {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            border: 1px solid #e0e0e0;
+            margin-top: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 0.8rem;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <h1>Portfolio Numérique</h1>
+        <p>Module 2.5 : Analyse de la Corrélation Bivariée</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="module2-4.html">&laquo; Module 2.4</a>
+        <a href="module2-5.html" style="color: var(--secondary-color);">Module 2.5</a>
+        <a href="module3-1.html">Module 3.1 &raquo;</a>
+    </nav>
+
+    <div class="container">
+
+      
+        <!-- SECTION 2 : Graphiques et Analyse du Coefficient de Corrélation -->
+        <section class="section-card">
+            <h2>2. Graphiques de l'Exercice 2.5 et Analyse de Corrélation</h2>
+            <p>Pour chacun des trois graphiques ci-dessous, le coefficient de corrélation linéaire ($r$) est indiqué afin d'exprimer la force ainsi que la direction de la corrélation.</p>
+
+            <!-- GRAPHIQUE 1 -->
+            <div class="graph-card">
+                <h3>Graphique 1 : [Nuage]</h3>
+                
+                <!-- OPTION A : Intégration interactive Google Sheets/Desmos via iframe -->
+               <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSg2Jkfi1yStW_95V6H6kO7Li8qcTiKdyB0PDgfqYRQPAoKg71Uibisq-ATbURqrHBzg_8IxA9vSa1b/pubchart?oid=1639790818&amp;format=interactive"></iframe>
+                
+                <!-- OPTION B : Ou une simple image de capture d'écran si tu préfères -->
+                <!-- 
+                <div class="img-container">
+                    <img src="[CHEMIN_IMAGE_GRAPHE_1]" alt="Graphique 1 - Exercice 2.5">
+                </div> 
+                -->
+
+                <div class="correlation-info">
+                    <p><strong>Coefficient de corrélation ($r$) :</strong> [Exemple: r = 0,85]</p>
+                    <p><strong>Direction :</strong> [Positive / Négative / Nulle]</p>
+                    <p><strong>Force :</strong> [Fortement / Modérément / Faiblement liée]</p>
+                    <p><strong>Interprétation :</strong> [Explication brève, ex: Plus X augmente, plus Y a tendance à augmenter fortement.]</p>
+                </div>
+            </div>
+
+            <!-- GRAPHIQUE 2 -->
+            <div class="graph-card">
+                <h3>Graphique 2 : [Titre du deuxième graphique]</h3>
+                
+                <iframe class="graph-embed" src="[URL_INTEGRATION_IFRAME_GRAPHE_2]"></iframe>
+
+                <div class="correlation-info">
+                    <p><strong>Coefficient de corrélation ($r$) :</strong> [Exemple: r = -0,72]</p>
+                    <p><strong>Direction :</strong> [Positive / Négative / Nulle]</p>
+                    <p><strong>Force :</strong> [Fortement / Modérément / Faiblement liée]</p>
+                    <p><strong>Interprétation :</strong> [Explication brève de la relation entre les deux variables.]</p>
+                </div>
+            </div>
+
+            <!-- GRAPHIQUE 3 -->
+            <div class="graph-card">
+                <h3>Graphique 3 : [Titre du troisième graphique]</h3>
+                
+                <iframe class="graph-embed" src="[URL_INTEGRATION_IFRAME_GRAPHE_3]"></iframe>
+
+                <div class="correlation-info">
+                    <p><strong>Coefficient de corrélation ($r$) :</strong> [Exemple: r = 0,10]</p>
+                    <p><strong>Direction :</strong> [Aucune direction claire]</p>
+                    <p><strong>Force :</strong> [Nulle ou très faible]</p>
+                    <p><strong>Interprétation :</strong> [Explication brève, ex: Il n'y a pas de lien linéaire apparent entre les deux variables.]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3 : Lien vers le travail complet / Outil -->
+        <section class="section-card">
+            <h2>3. Travail Complet Exercice 2.5</h2>
+            <p>Consultez la feuille de calcul complète ou le document d'exercices regroupant toutes les données brutes :</p>
+            <a href="[LIEN_DESMOS_OU_SHEETS_MODULE_2_5]" target="_blank" class="btn">📊 Accéder au document Google Sheets / Desmos</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Portfolio de Mathématiques</p>
+    </footer>
+
+</body>
+</html>
