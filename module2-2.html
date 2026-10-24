@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Numérique - Module 2.2 : Les Mesures de Tendance Centrale</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e67e22;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-radius: 8px;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #1a252f;
+            padding: 0.8rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section-card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 1.2rem;
+        }
+        .notes-box {
+            background-color: #fef9e7;
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+        .notes-box ul {
+            padding-left: 1.2rem;
+            margin: 0.5rem 0;
+        }
+        .notes-box li {
+            margin-bottom: 0.8rem;
+        }
+        .exercise-box {
+            background-color: #f1f8ff;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 0.8rem;
+            margin-right: 10px;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <h1>Portfolio Numérique</h1>
+        <p>Module 2.2 : Les Mesures de Tendance Centrale</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="module2-1.html">&laquo; Module 2.1</a>
+        <a href="module2-2.html" style="color: var(--secondary-color);">Module 2.2</a>
+        <a href="module2-3.html">Module 2.3 &raquo;</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- SECTION 1 : Notes Importantes de la Leçon -->
+        <section class="section-card">
+            <h2>1. Notes Importantes & Théorie de la Leçon</h2>
+            <p>Les mesures de tendance centrale aident à saisir, à l'aide d'un nombre unique, ce qui est typique d'un ensemble de données.</p>
+            
+            <div class="notes-box">
+                <h3>📌 Notions Clés à Retenir</h3>
+                <ul>
+                    <li>
+                        <strong>La Moyenne :</strong> Rapport entre la somme d'un ensemble de données et le nombre total d'éléments dans cet ensemble. 
+                        <br><em>Formule :</em> $\bar{x} = \frac{\sum x}{n}$
+                    </li>
+                    <li>
+                        <strong>La Moyenne Pondérée :</strong> Utilisée lorsque les valeurs d'un ensemble sont associées à un poids ou à une fréquence différente (ex: notes de cours avec pourcentages, ou données groupées en intervalles).
+                    </li>
+                    <li>
+                        <strong>La Médiane :</strong> Valeur qui divise un ensemble ordonné de données en deux parties égales (50% en dessous, 50% au-dessus). S'il y a un nombre pair de données, c'est la moyenne des deux valeurs centrales.
+                    </li>
+                    <li>
+                        <strong>Le Mode :</strong> La valeur ou l'intervalle qui possède la plus grande fréquence dans un ensemble de données (peut être unimodal, bimodal ou sans mode).
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECTION 2 : Exercices 2.2 et Vérifications Technologiques -->
+        <section class="section-card">
+            <h2>2. Exercices 2.2 & Vérifications Technologiques</h2>
+            <p>Retrouvez ci-dessous mes exercices </p>
+                
+                <!-- 📍 EMPLACEMENT POUR METTRE TON LIEN -->
+                <a href="[https://docs.google.com/document/d/1v2JWPwiDARwcDWilU1R_d6ncXqBafs9bwUsMmfT9BtU/edit?usp=sharing]" target="_blank" class="btn">📝 Voir mes réponses aux Exercices 2.2</a>
+                
+    
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Portfolio de Mathématiques</p>
+    </footer>
+
+</body>
+</html>
