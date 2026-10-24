@@ -75,12 +75,16 @@
             border: 0;
             border-radius: var(--border-radius);
         }
-        .source-link, .links-list {
+        .source-link {
             font-size: 0.9rem;
             margin-top: 0.5rem;
+            display: block;
+        }
+        .links-list {
+            padding-left: 1.2rem;
         }
         .links-list li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.6rem;
         }
         .btn {
             display: inline-block;
@@ -90,7 +94,10 @@
             text-decoration: none;
             border-radius: 4px;
             font-weight: bold;
-            margin-top: 0.5rem;
+            margin-top: 0.8rem;
+        }
+        .btn:hover {
+            background-color: #2980b9;
         }
         footer {
             text-align: center;
@@ -117,32 +124,30 @@
 
     <div class="container">
 
-
+        <!-- SECTION 1 : Distribution Normale -->
         <section class="section-card">
             <h2>1. Représentation de la Distribution Normale</h2>
             <p>La distribution normale (aussi appelée courbe en cloche ou courbe de Gauss) est une distribution de probabilité continue et parfaitement symétrique par rapport à sa moyenne (µ). Dans cette distribution, la majorité des données se regroupent autour de la moyenne, et plus on s'en éloigne (vers la gauche ou vers la droite), plus les valeurs deviennent rares. Elle suit la règle empirique 68-95-99,7 %, ce qui signifie que 68 % des données se situent à moins d'un écart-type (σ) de la moyenne, 95 % à moins de deux écarts-types et 99,7 % à moins de trois écarts-types.</p>
             
             <div class="img-container">
-            
-                <img src="[https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/500px-Standard_deviation_diagram.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150115020654]" alt="Distribution normale">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/500px-Standard_deviation_diagram.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20150115020654" alt="Distribution normale">
                 <span class="source-link">
-                    <strong>Source :</strong> <a href="[https://commons.wikimedia.org/wiki/File:Standard_deviation_diagram.svg]" target="_blank">[.wikimedia.org]</a>
+                    <strong>Source :</strong> <a href="https://commons.wikimedia.org/wiki/File:Standard_deviation_diagram.svg" target="_blank">Wikimedia Commons</a>
                 </span>
             </div>
         </section>
 
-     
+        <!-- SECTION 2 : Vidéo -->
         <section class="section-card">
             <h2>2. Capsule Vidéo : L'Écart Réduit (Cote Z)</h2>
-            <p>[Explication de l'écart réduit ou description de la vidéo]</p>
+            <p>Visionnez la capsule vidéo ci-dessous pour mieux comprendre le fonctionnement de l'écart réduit et de la cote Z dans les distributions normales.</p>
 
             <div class="video-container">
-            
                <iframe width="560" height="315" src="https://www.youtube.com/embed/LtMXxPmhMJg?si=xVGIxD27_d2Icla4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
 
-       
+        <!-- SECTION 3 : Liens Utiles -->
         <section class="section-card">
             <h2>3. Liens Utiles</h2>
             <ul class="links-list">
@@ -153,17 +158,26 @@
             </ul>
         </section>
 
-       
+        <!-- SECTION 4 : Exercices 2.4 - Partie 1 -->
         <section class="section-card">
             <h2>4. Exercices 2.4 - Partie 1</h2>
-             </div>
-            <a href="[https://docs.google.com/spreadsheets/d/1UKIPIA5A4kVmO8IHdoe_MmxwIVhYgV3N1yykJJRhJGA/edit?usp=sharing]" target="_blank" class="btn">Accéder à mon outil (Desmos/Sheets)</a>
+            <p>Retrouvez ci-dessous mon fichier de travail contenant les résolutions et graphiques de la première partie.</p>
+            <a href="https://docs.google.com/spreadsheets/d/1UKIPIA5A4kVmO8IHdoe_MmxwIVhYgV3N1yykJJRhJGA/edit?usp=sharing" target="_blank" class="btn">Accéder à mon outil (Desmos/Sheets)</a>
         </section>
 
-
+        <!-- SECTION 5 : Exercices 2.4B -->
         <section class="section-card">
             <h2>5. Exercices 2.4B</h2>
-            <a href="[https://docs.google.com/document/d/1TbQJq_Ce3I4rwmmk2HmW5XU8Unhuki6wvHDxvcO67gc/edit?usp=sharing]" target="_blank" class="btn">Voir les réponses des exercices 2.4B</a>
+            <p>Consultez le document regroupant les réponses et explications des exercices complémentaires 2.4B.</p>
+            <a href="https://docs.google.com/document/d/1TbQJq_Ce3I4rwmmk2HmW5XU8Unhuki6wvHDxvcO67gc/edit?usp=sharing" target="_blank" class="btn">Voir les réponses des exercices 2.4B</a>
         </section>
 
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Portfolio de Mathématiques</p>
+    </footer>
+
+</body>
+</html>
        
